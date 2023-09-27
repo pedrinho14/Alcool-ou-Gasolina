@@ -2,18 +2,18 @@
     <!-- Base application theme. -->
     <style name="Theme.AlcoolOuGasolina" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">#CB584C</item>
+        <item name="colorPrimary">#337C36</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/white</item>
-        <item name="colorPrimaryDark">#1F1F1F</item>
+        <item name="colorPrimaryDark">#0B1447</item>
         <!-- Secondary brand color. -->
         <item name="colorSecondary">#B85045</item>
-        <item name="colorSecondaryVariant">@color/teal_200</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorSecondaryVariant">#0C1853</item>
+        <item name="colorOnSecondary">#091A7A</item>
 
         <!-- Customize your theme here. -->
-        <item name="android:textColorPrimary">@color/black</item>
-        <item name="android:textColorHint">@color/black</item>
+        <item name="android:textColorPrimary">@color/purple_700</item>
+        <item name="android:textColorHint">@color/purple_700</item>
         <item name="android:backgroundTint">@color/white</item>
     </style>
 </resources>

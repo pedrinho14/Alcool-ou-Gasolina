@@ -4,32 +4,35 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#87C4CB"
-    android:backgroundTint="#87C4CB"
+    android:background="#080C0C"
+    android:backgroundTint="#040707"
     tools:context=".MainActivity">
 
     <LinearLayout
-        android:layout_width="300dp"
-        android:layout_height="550dp"
-        android:layout_marginStart="3dp"
-        android:layout_marginEnd="3dp"
+        android:id="@+id/linearLayout"
+        android:layout_width="417dp"
+        android:layout_height="581dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="88dp"
         android:background="@drawable/rounded_layout"
         android:backgroundTint="?android:backgroundTint"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
 
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="166dp"
             android:layout_gravity="center_horizontal"
             android:contentDescription="uma bomba de gasolina ilustrando o app"
             android:paddingVertical="10dp"
             android:textAlignment="center"
-            app:srcCompat="@mipmap/ic_launcher_foreground" />
+            app:srcCompat="@mipmap/combustivel" />
 
         <TextView
             android:id="@+id/titulo"
@@ -39,43 +42,48 @@
             android:layout_marginBottom="10dp"
             android:text="Gasolina ou Álcool?"
             android:textAlignment="center"
-            android:textColor="#87C4CB"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="#32CD32"
             android:textSize="25sp"
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/edAlcool"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/edGasolina"
+            android:layout_width="327dp"
+            android:layout_height="85dp"
             android:layout_marginHorizontal="30dp"
             android:ems="10"
             android:hint="Preço da gasolina"
+            android:textColorHint="#006400"
             android:inputType="numberDecimal" />
 
         <EditText
-            android:id="@+id/edGasolina"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/edAlcool"
+            android:layout_width="294dp"
+            android:layout_height="82dp"
+            android:layout_marginHorizontal="30dp"
             android:ems="10"
-            android:hint="alcool"
+            android:hint="Preço do alcool"
+            android:textColorHint="#006400"
             android:inputType="numberDecimal" />
 
         <Switch
             android:id="@+id/swPercentual"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="135dp"
+            android:layout_height="58dp"
             android:layout_gravity="right"
             android:layout_marginHorizontal="30dp"
-            android:text="75%" />
+            android:text="70%" />
 
         <Button
             android:id="@+id/btCalcular"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="160dp"
+            android:layout_height="82dp"
             android:layout_gravity="center_horizontal"
             android:layout_marginVertical="20dp"
-            android:backgroundTint="#CB584C"
+            android:backgroundTint="#FFA500"
             android:text="Calcular" />
 
     </LinearLayout>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
